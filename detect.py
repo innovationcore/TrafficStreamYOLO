@@ -195,8 +195,9 @@ if __name__ == '__main__':
     random_stream = random.choice(cam_check.cameras_info)
     stream_URL = random_stream['hls']
 
+# 'https://5723acd20ffa9.streamlock.net:1935/lexington-live/lex-cam-050.stream/playlist.m3u8'
     if opt.source is None:
-        source = 'https://5723acd20ffa9.streamlock.net:1935/lexington-live/lex-cam-050.stream/playlist.m3u8'
+        source = stream_URL
     else:
         source = opt.source
 
